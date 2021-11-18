@@ -1,0 +1,116 @@
+.timeline__item{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin: 10px 0;
+    /* padding: 0 -10px; */
+    width: 50%;
+}
+
+.timeline__item:nth-child(even){
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding-right: 0px;
+    padding-left: 50px;
+}
+
+/* .content__date__even{
+    transform: rotate(-90deg);
+} */
+
+.content__date__odd{
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    right: -50%;
+}
+
+.content__title{
+    max-width: 70%;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+
+    font-family: Ovo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #222121;
+}
+
+.content__text{
+    max-width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    text-align: right;
+
+    color: #000;
+    font-family: Exo 2;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.timeline__image{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.timeline__item__content .circle {
+    z-index: 1;
+    background-color: #000;
+    border: 3px sloid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 40px);
+    right: -10px;
+    width: 20px;
+    height: 20px;
+}
+
+.timeline__item__content::after{
+    z-index: -1;
+    content: ' ';
+    background-color: #000;
+    position: absolute;
+    right: 0%;
+    top: calc(50% - 7.5px);
+    width:  80%;
+    height: 5px;
+}
+
+.timeline__item:nth-child(even) .content__date__odd{
+    transform: rotate(-90deg);
+    right: auto;
+    left: -50%;
+}
+
+.timeline__item:nth-child(even) .content__title{
+    align-items: flex-start;
+    text-align: left;
+    left: 15%;
+}
+
+.timeline__item:nth-child(even) .content__text{
+    align-items: flex-start;
+    text-align: left;
+    left: 30%;
+}
+
+.timeline__item:nth-child(even) .timeline__item__content::after{
+    right: auto;
+    left: -10px;
+}
+
+.timeline__item:nth-child(even) .timeline__item__content .circle{
+    right: auto;
+    left: -10px;
+}

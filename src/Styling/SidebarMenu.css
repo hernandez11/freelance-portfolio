@@ -1,0 +1,101 @@
+.sidebarMenu{
+    position: fixed;
+    background-color: transparent;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+}
+
+.menu__bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+    color: #000;
+}
+
+.nav__menu{
+    z-index: 1;
+    background-color: #436879;
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+.nav__menu.active{
+    left: 0;
+    transition: 350ms;
+}
+
+.overlay.active{
+    z-index: 1;
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    opacity: 0.5;
+    right: 0;
+    transition: ease-in-out 2s;
+}
+
+.sidebar__active__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+}
+/* change the css below to make it so that the red bottom border smoothly transitiona from L-R */
+.nav__text a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-family: Ovo;
+    font-size: 55px;
+    line-height: 62px;
+    letter-spacing: 0.1em;
+}
+
+.nav__text a:hover{
+    border-bottom: solid red 7px;
+    transition: 100ms;
+}
+/* end */
+
+.nav__menu__items {
+    width: 100%;
+}
+  
+.navbar__toggle {
+    background-color: #436879;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+span {
+    margin-left: 16px;
+    margin: 25px 0;
+}

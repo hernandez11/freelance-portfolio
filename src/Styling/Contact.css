@@ -1,0 +1,77 @@
+.contact__container{
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.contact__sidebox{
+    width: 50%;
+    max-width: 700px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    background-color: #436879;
+    color: #fff;
+}
+
+.sidebox__title{
+    text-align: start;
+
+    font-family: Ovo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+}
+
+.sidebox__title>h2{
+    padding-bottom: 50px;
+}
+
+.sidebox__title>p{
+    font-family: Exo 2;
+    font-size: 15px;
+}
+
+.sidebox__contact{
+    text-align: start;
+    /* padding: 20px 0; */
+    font-family: Exo 2;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.sidebox__contact>p{
+    padding: 10px 0;
+}
+
+.sidebox__icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.form__container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* max-width: 700px; */
+    height: 100%;
+}
+
+
