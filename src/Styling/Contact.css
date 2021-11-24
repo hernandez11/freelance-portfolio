@@ -1,16 +1,19 @@
 .contact__container{
     width: 80%;
-    height: 85vh;
+    height: 75vh;
+    min-height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto auto;
+    margin: calc(25vh/4) auto;
+    background-color: whitesmoke;
+    border-radius: 15px;
 }
 
 .contact__sidebox{
     width: 50%;
     max-width: 700px;
-    height: 65vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,14 +67,94 @@
 }
 
 .form__container{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    /* max-width: 700px; */
     height: 100%;
+    display: flex;
 }
 
+.form__wrapper{
+    width: 100%;
+    height: 75vh;
+    min-height: 700px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+
+    font-family: Exo 2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+
+    color: #222121;
+}
+
+.form__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.row__item{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+input[type=text]{
+    width: 15em;
+    height: 25px;
+    margin-top: 10px;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.checkbox__row{
+    width: 100%;
+    text-align: start;
+}
+
+.checkbox__wrapper{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto auto;
+}
+
+.checkbox__item{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=checkbox]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-clip: content-box;
+    border: 1.5px solid #bbbbbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background: #000 -19px top no-repeat;
+}
+
+textarea{
+    width: 45vw;
+    height: 5vh;
+    border-color: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    outline: none;
+    resize: none;
+    padding-top: 30px;
+}
 

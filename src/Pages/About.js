@@ -86,6 +86,9 @@ function About() {
 {/* LATEST WORK SECTION */}
             <p className='dark-large__text'>LATEST WORK</p>
             <Timeline />
+            <Link to ='/latest-work'>
+                <Styled__Button title='VIEW MORE' />
+            </Link>
             
 {/* REVIEWS SECTION */}
             <Line />

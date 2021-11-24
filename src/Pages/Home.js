@@ -16,9 +16,9 @@ function Home() {
                     <h1 className='left__title'>Freelance <br/> Web Developer</h1>
                     <p className='left__description'>I develop websites using modern framworks, libraries <br/>and up-to-date technologies ...
                     That’s mumbo Jumbo for <br/>FAST, USER FRIENDLY, AND RELIABLE.</p>
-                    <Link to ='/contact'>
-                        <Styled__Button title='HIRE ME' />
-                    </Link>
+                    <Styled__Button 
+                    link='/contact'
+                    title='HIRE ME' />
                 </span>
             </div>
 

@@ -11,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #222121;
 }
 
 .left__title{
@@ -19,7 +20,6 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-    color: #222121;
 }
 
 .left__description{
@@ -28,7 +28,6 @@
     font-family: Exo 2;
     font-weight: 300;
     font-size: 10px;
-    color: #222121;
 }
 
 .left__home__button{
@@ -114,4 +113,44 @@
     width: 25px;
     height: 25px;
     margin: 25px 0;
+}
+
+@media only screen and (max-width: 768px){
+    .home{
+        flex-direction: column;
+    }
+    .home__left{
+        background-color: #436879;
+        color: #fff;
+        margin-bottom: 15px;
+        margin-top: 15%;
+        padding: 0 15px;
+        text-align: center;
+    }
+    .home__right{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .home__center{
+        height: 100%;
+    }
+    .home__center>img:nth-child(1){
+        width: 70%;
+    }
+    .circle__img{
+        right: 0%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .home__left{
+        margin-top: 30%;
+    }
+    .circle__img{
+        width: 40%;
+    }
+    .right__icon{
+        width: 30px;
+        height: 30px;
+    }
 }
