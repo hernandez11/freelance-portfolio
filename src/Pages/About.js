@@ -12,7 +12,15 @@ function About() {
     const Line = styled.hr`
         color: rgba(0, 0, 0, 0.65);
         width: 90%;
-        margin: 3% 0;
+        margin: 20px 0;
+        
+        @media only screen and (max-width: 768px){
+            width: 70%
+        }
+
+        @media only screen and (max-width: 480px){
+            margin: 15% 0;
+        }
     `;
 
     return (
@@ -46,18 +54,25 @@ function About() {
                 </div>
     {/* RIGHT HERO SECTION */}
                 <div className='hero__end'>
+                    <span>
                     <p className='light-large__text'>Years of Experience</p>
                     <p className='light-small__text extra-large'>4</p>
+                    </span>
+                    <span>
                     <p className='light-large__text'>Satisfaction Rate</p>
                     <p className='light-small__text extra-large'>100%</p>
+                    </span>
+                    <span>
                     <p className='light-large__text'>Level of Education</p>
                     <p className='light-small__text extra-large'>AS.</p>
+                    </span>
                 </div>
             </div>
 
             <Line />
 {/* MY TOOLS SECTION */}
                 <p className='dark-large__text'>MY TOOLS</p>
+                <div className='toolbox__container'>
                 <div className='toolboxItem__wrapper'>
                     <ToolboxItem 
                     image='./Assets/figma-logo.pdf'
@@ -81,6 +96,7 @@ function About() {
                     image='./Assets/aws-logo.pdf'
                     title='AWS'/>
                 </div>
+                </div>
             
             <Line />
 {/* LATEST WORK SECTION */}
@@ -93,13 +109,16 @@ function About() {
 {/* REVIEWS SECTION */}
             <Line />
             <Reviews />
-            <div className='contact__container'>
-            <Link to ='/contact' className='contact__link'>
-                <p className='dark-large__text extra-large'>LETS TALK BUSINESS</p>
-            </Link>
-            <img className='rotate'
-            src='./Assets/L-circleText.png'
-            alt='' />
+            <Line />
+            
+            <div className='contact__link__container'>
+                <Link to ='/contact' className='contact__link'>
+                    <p className='dark-large__text extra-large'>LETS TALK BUSINESS</p>
+                </Link>
+
+                <img className='rotate'
+                src='./Assets/L-circleText.png'
+                alt='' />
             </div>
             <Line />
         </div>

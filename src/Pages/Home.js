@@ -14,11 +14,9 @@ function Home() {
             <div className='home__left'>
                 <span>
                     <h1 className='left__title'>Freelance <br/> Web Developer</h1>
-                    <p className='left__description'>I develop websites using modern framworks, libraries <br/>and up-to-date technologies ...
+                    <p className='left__description'>We develop websites using modern frameworks, libraries <br/>and up-to-date technologies ...
                     That’s mumbo Jumbo for <br/>FAST, USER FRIENDLY, AND RELIABLE.</p>
-                    <Styled__Button 
-                    link='/contact'
-                    title='HIRE ME' />
+                    <Styled__Button link='/contact' title='HIRE ME' />
                 </span>
             </div>
 
@@ -32,8 +30,8 @@ function Home() {
                 alt='' />
 
                 <span className='center__title'>
-                    <h3>Angel</h3>
-                    <h2>Hernandez</h2>
+                    <h3>A&F</h3>
+                    <h2>WEB DEV</h2>
                 </span>
             </div>
 

@@ -1,4 +1,5 @@
 .navbar{
+    z-index: 1;
     background-color: transparent;
     width: 100%;
     position: sticky;
@@ -18,6 +19,7 @@
 .link{
     text-decoration: none;
     color: #000;
+    text-align: center;
     font-family: Exo 2;
     font-size: 15px;
     line-height: 18px;
@@ -41,4 +43,21 @@
     width: 25px;
     height: 25px;
     margin: 0 25px;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .navbar__logo{
+        padding: 25px 0;
+    }
+    .navbar__icons__container{
+        justify-content: center;
+    }
+    .link{
+        font-size: 12px;
+    }
 }

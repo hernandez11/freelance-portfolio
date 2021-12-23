@@ -21,7 +21,7 @@ function Contact() {
             <div className='contact__sidebox'>
                 <span className='sidebox__title'>
                     <h2>CONTACT INFO</h2>  
-                    <p>ANGEL DEV</p>
+                    <p>A&F WEB DEV</p>
                     <p>FREELANCE WEB DEVELOPER</p>
                 </span>
                 <span className='sidebox__contact'>

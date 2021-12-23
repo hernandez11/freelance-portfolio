@@ -27,7 +27,7 @@
 }
 
 .content__title{
-    max-width: 70%;
+    width: 75%;
     position: absolute;
     top: 5%;
     right: 15%;
@@ -95,7 +95,8 @@
 
 .timeline__item:nth-child(even) .content__title{
     align-items: flex-start;
-    text-align: left;
+    /* text-align: left; */
+    right: 0%;
     left: 15%;
 }
 
@@ -113,4 +114,31 @@
 .timeline__item:nth-child(even) .timeline__item__content .circle{
     right: auto;
     left: -10px;
+}
+
+@media only screen and (max-width: 768px){
+    .timeline__item{
+        width: 80%;
+    }
+    .content__title{
+        /* max-width: 100%; */
+    }
+    .content__text{
+        display: none;
+    }
+    .content__date__odd{
+        display: none;
+    }
+    .timeline__item__content .circle {
+        display: none;
+    }
+    .timeline__item__content::after{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .timeline__item{
+        margin: 10% 0;
+    }
 }

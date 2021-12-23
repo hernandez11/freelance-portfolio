@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styling/TimelineItem.css';
 
 const TimelineItem = ({ TimelineData }) => (
+    <>
     <div className='timeline__item'>
         {/* <p className='content__date__even'>{TimelineData.date}</p> */}
         <img className='timeline__image'
@@ -19,6 +20,7 @@ const TimelineItem = ({ TimelineData }) => (
         </div>
         <p className='content__date__odd'>{TimelineData.date}</p>
     </div>
+    </>
 );
 
 export default TimelineItem;

@@ -1,9 +1,22 @@
+.reviews__container{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+.quote__img{
+    height: 100px;
+}
+
+.quote__img:nth-child(1){
+    rotate: 180deg;
+}
+
 .reviews{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 0;
     max-width: 700px;
 }
 
@@ -12,8 +25,22 @@
     margin-bottom: 20px;
     color: #45454d;
     max-width: 100%;
+    padding: 0 30px;
 }
 
 .review__selector{
     display: flex;
 }
+
+@media only screen and (max-width: 768px){
+    .reviews__container{
+        flex-direction: column;
+    }
+    .quote__img{
+        height: 25px;
+    }
+}
+
+/* @media only screen and (max-width: 480px){
+
+} */

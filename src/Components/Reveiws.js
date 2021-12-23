@@ -40,18 +40,24 @@ function Reveiws() {
     `;
 
     return (
-        <div className='reviews'>
-            <p>{current.quote}</p>
-            <p>{current.client}</p>
-            <div className='review__selector'>
-                {Object.keys(Quotes).map(index => (
-                    <Selector
-                        onClick={event => handleSetClicked(event)}
-                        data-quote={index}
-                        key={index}
-                    />
-                ))}
-            </div> 
+        <div className='reviews__container'>
+            <img className='quote__img' src='./Assets/quote__icon.png' alt='' />
+
+            <div className='reviews'>
+                <p>{current.quote}</p>
+                <p>{current.client}</p>
+                <div className='review__selector'>
+                    {Object.keys(Quotes).map(index => (
+                        <Selector
+                            onClick={event => handleSetClicked(event)}
+                            data-quote={index}
+                            key={index}
+                        />
+                    ))}
+                </div> 
+            </div>
+
+            <img className='quote__img' src='./Assets/quote__icon.png' alt='' />
         </div>
     )
 }

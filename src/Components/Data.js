@@ -1,19 +1,11 @@
 const Quotes = {
     0: {
-        quote: '1-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim lorem, tempor nec elit iaculis, consectetur convallis mi. Aenean quis metus at ex rhoncus facilisis.',
-        client: '- lorem ipsum'
+        quote: 'Angel is great at what he does. He is professional, a great listener, and pays attention to detail. Loved working with him and loved the final result!',
+        client: '- Arizona Youth Revival'
     },
     1: {
-        quote: '2-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim lorem, tempor nec elit iaculis, consectetur convallis mi. Aenean quis metus at ex rhoncus facilisis.',
-        client: '- lorem ipsum'
-    },
-    2: {
-        quote: '3-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim lorem, tempor nec elit iaculis, consectetur convallis mi. Aenean quis metus at ex rhoncus facilisis.',
-        client: '- lorem ipsum'
-    },
-    3: {
-        quote: '4-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim lorem, tempor nec elit iaculis, consectetur convallis mi. Aenean quis metus at ex rhoncus facilisis.',
-        client: '- lorem ipsum'
+        quote: 'Angel was VERY patient throughout the process! It was perfect to be honest. Thank u for designing and changing literally everything I needed!',
+        client: '- Damaris'
     },
 }
 
