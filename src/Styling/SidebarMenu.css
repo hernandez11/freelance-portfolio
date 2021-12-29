@@ -54,12 +54,11 @@
 
 .nav__text{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 8px 0px 8px 16px;
     list-style: none;
 }
-/* change the css below to make it so that the red bottom border smoothly transitiona from L-R */
 .nav__text a{
     text-decoration: none;
     color: #fff;
@@ -79,7 +78,6 @@
     border-bottom: solid #fff 3px;
     transition: smooth 200ms;
 }
-/* end */
 
 .nav__menu__items {
     width: 100%;
@@ -90,7 +88,7 @@
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 

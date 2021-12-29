@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Styling/About.css';
 import styled from 'styled-components'
-import Styled__Button from '../Components/Button.js';
+import StyledButton from '../Components/Button.js';
 import ToolboxItem from '../Components/ToolboxItem';
 import Reviews from '../Components/Reveiws.js';
 import Timeline from '../Components/Timeline.js';
@@ -43,14 +43,12 @@ function About() {
                         <p className='light-large__text'>CONTACT</p>
                         <p className='light-small__text'>PHX, AZ<br/>
                         (480) 698-0201<br/>
-                        Ahernandez11diaz@gmail.com</p>
+                        AandFWebDev@gmail.com</p>
                     </span>
                 </div>
     {/* CENTER HERO SECTION */}
                 <div className='hero__center'>
-                    <img className='hero__center__img'
-                    src='./Assets/home__img.png'
-                    alt='' />
+                    <img className='hero__center__img' src='./Assets/home__img.png' alt='' />
                 </div>
     {/* RIGHT HERO SECTION */}
                 <div className='hero__end'>
@@ -73,29 +71,29 @@ function About() {
 {/* MY TOOLS SECTION */}
                 <p className='dark-large__text'>MY TOOLS</p>
                 <div className='toolbox__container'>
-                <div className='toolboxItem__wrapper'>
-                    <ToolboxItem 
-                    image='./Assets/figma-logo.pdf'
-                    title='Figma'/>
-                    <ToolboxItem 
-                    image='./Assets/react-logo.pdf'
-                    title='React'/>
-                    <ToolboxItem 
-                    image='./Assets/js-logo.pdf'
-                    title='JavaScript'/>
-                    <ToolboxItem 
-                    image='./Assets/css3-logo.pdf'
-                    title='CSS'/>
-                    <ToolboxItem 
-                    image='./Assets/html-logo.pdf'
-                    title='HTML'/>
-                    <ToolboxItem 
-                    image='./Assets/firebase-logo.pdf'
-                    title='Firebase'/>
-                    <ToolboxItem 
-                    image='./Assets/aws-logo.pdf'
-                    title='AWS'/>
-                </div>
+                    <div className='toolboxItem__wrapper'>
+                        <ToolboxItem 
+                        image='./Assets/figma-logo.pdf'
+                        title='Figma'/>
+                        <ToolboxItem 
+                        image='./Assets/react-logo.pdf'
+                        title='React'/>
+                        <ToolboxItem 
+                        image='./Assets/js-logo.pdf'
+                        title='JavaScript'/>
+                        <ToolboxItem 
+                        image='./Assets/css3-logo.pdf'
+                        title='CSS'/>
+                        <ToolboxItem 
+                        image='./Assets/html-logo.pdf'
+                        title='HTML'/>
+                        <ToolboxItem 
+                        image='./Assets/firebase-logo.pdf'
+                        title='Firebase'/>
+                        <ToolboxItem 
+                        image='./Assets/aws-logo.pdf'
+                        title='AWS'/>
+                    </div>
                 </div>
             
             <Line />
@@ -103,22 +101,19 @@ function About() {
             <p className='dark-large__text'>LATEST WORK</p>
             <Timeline />
             <Link to ='/latest-work'>
-                <Styled__Button title='VIEW MORE' />
+                <StyledButton title='VIEW MORE' />
             </Link>
             
 {/* REVIEWS SECTION */}
             <Line />
             <Reviews />
             <Line />
-            
+{/* CONTACT CTA */}
             <div className='contact__link__container'>
                 <Link to ='/contact' className='contact__link'>
                     <p className='dark-large__text extra-large'>LETS TALK BUSINESS</p>
                 </Link>
-
-                <img className='rotate'
-                src='./Assets/L-circleText.png'
-                alt='' />
+                <img className='rotate' src='./Assets/L-circleText.png' alt='' />
             </div>
             <Line />
         </div>

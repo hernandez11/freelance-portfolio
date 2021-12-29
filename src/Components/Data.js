@@ -4,7 +4,7 @@ const Quotes = {
         client: '- Arizona Youth Revival'
     },
     1: {
-        quote: 'Angel was VERY patient throughout the process! It was perfect to be honest. Thank u for designing and changing literally everything I needed!',
+        quote: 'Angel was VERY patient throughout the process! It was perfect to be honest. Thank you for designing and changing literally everything I needed!',
         client: '- Damaris'
     },
 }

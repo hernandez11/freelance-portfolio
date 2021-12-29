@@ -9,7 +9,7 @@
 
 .about__hero__wrapper{
     margin-top: 25px;
-    background-color: #222121;
+    background-color: #171616;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -128,10 +128,10 @@
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-/* background-image: url('https://images.unsplash.com/photo-1633269540827-728aabbb7646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover; */
+    background-image: url('../Images/contact__background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 80%;
     height: 75vh;
     margin: 5% 0;
@@ -142,6 +142,10 @@ background-size: cover; */
     z-index: 1;
     position: absolute;
     text-decoration: none;
+}
+
+.contact__link>p{
+    color: #fff;
 }
 
 .contact__link>:hover{
@@ -155,6 +159,7 @@ background-size: cover; */
     animation-timing-function: linear; 
     width: 35vw;
     width: 250px;
+    filter: invert(100%);
 }
     
 @keyframes spin {

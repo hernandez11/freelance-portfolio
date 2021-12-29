@@ -169,6 +169,20 @@ textarea{
     padding-top: 30px;
 }
 
+.scheduleLink{
+    width: 75%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.scheduleLink>a{
+    color: #000;
+}
+
 @media only screen and (max-width: 768px){
     .sidebox__icons{
         display: none;
@@ -194,6 +208,7 @@ textarea{
     }
     .form__checbox__row{
         width: 100%;
+        text-align: center;
     }
     .checkbox__wrapper{
         width: 100%;
