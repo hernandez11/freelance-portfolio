@@ -69,19 +69,19 @@ function Contact() {
                         <label>WHAT KIND OF WEBSITE DO YOU NEED.</label>
                         <div className='checkbox__wrapper'>
                             <span className='checkbox__item'>
-                                <input type='checkbox' name='siteClass' />
+                                <input type='checkbox' name='siteClass00' />
                                 <label>SINGLE PAGE</label>
                             </span>
                             <span className='checkbox__item'>
-                                <input type='checkbox' name='siteClass' />
+                                <input type='checkbox' name='siteClass01' />
                                 <label>ECOMERCE</label>
                             </span>
                             <span className='checkbox__item'>
-                                <input type='checkbox' name='siteClass' />
+                                <input type='checkbox' name='siteClass02' />
                                 <label>STATIC</label>
                             </span>
                             <span className='checkbox__item'>
-                                <input type='checkbox' name='siteClass' />
+                                <input type='checkbox' name='siteClass03' />
                                 <label>I DONT KNOW</label>
                             </span>
                         </div>

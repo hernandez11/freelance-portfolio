@@ -28,8 +28,11 @@
 
 .timeline__image{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 5px;
+    background: #ebebeb;
+    box-shadow:  10px 10px 20px #c8c8c8,
+        -10px -10px 20px #ffffff;
 }
 
 .timeline__item__content .circle {

@@ -1,8 +1,5 @@
 button,
 button::after {
-    /* z-index: -1; */
-    /* width: 100%; */
-    /* max-width: 250px; */
     padding: 16px 20px;
     font-size: 18px;
     background: linear-gradient(45deg, transparent 5%, #222 5%);

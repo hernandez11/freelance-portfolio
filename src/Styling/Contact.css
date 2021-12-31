@@ -25,7 +25,6 @@
 
 .sidebox__title{
     text-align: start;
-
     font-family: Ovo;
     font-style: normal;
     font-weight: normal;
@@ -45,7 +44,6 @@
 
 .sidebox__contact{
     text-align: start;
-    /* padding: 20px 0; */
     font-family: Exo 2;
     font-style: normal;
     font-weight: 100;
@@ -78,14 +76,12 @@
     margin: auto auto;
     display: flex;
     flex-direction: column;
-
     font-family: Exo 2;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.1em;
-
     color: #222121;
 }
 
@@ -124,8 +120,6 @@ input[type=text]{
 .form__checbox__row>label{
     margin-left: 12%;
 }
-
-
 
 .checkbox__wrapper{
     width: 75%;
