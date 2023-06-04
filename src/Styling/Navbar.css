@@ -21,7 +21,7 @@
     color: #000;
     text-align: center;
     font-family: Exo 2;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.2em;
 }
@@ -40,16 +40,19 @@
 }
 
 .navbar__icon{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin: 0 25px;
 }
 
 @media only screen and (max-width: 768px){
     .navbar{
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
-        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .navbar__icon{
+        display: none;
     }
     .navbar__logo{
         padding: 25px 0;

@@ -16,11 +16,11 @@ function Contact() {
     }
 
     return (
-    <>
+    <div className='contact'>
         <div className='contact__container'>
             <div className='contact__sidebox'>
                 <span className='sidebox__title'>
-                    <h2>CONTACT INFO</h2>  
+                    <h2>LET'S CHAT</h2>  
                     <p>A&F WEB DEV</p>
                     <p>FREELANCE WEB DEVELOPER</p>
                 </span>
@@ -28,7 +28,7 @@ function Contact() {
                     <h3>CONTACT</h3>
                     <p>PHX, AZ</p>
                     <p>(480) 698 - 0201</p>
-                    <p>Ahernandez11diaz@gmail.com</p>
+                    <p>Aandfwebdev@gmail.com</p>
                 </span>
                 <div className='sidebox__icons'>
                     <a href='https://www.linkedin.com/in/angelhdzdiaz/' target="_blank" rel="noopener noreferrer" >
@@ -37,7 +37,7 @@ function Contact() {
                     <a href='https://www.instagram.com/joshua._.hdz/' target="_blank" rel="noopener noreferrer" >
                         <img className='navbar__icon' src='./Assets/instagram__icon.png' alt='' />
                     </a>
-                    <a href='mailto:ahernandez11diaz@gmail.com' >
+                    <a href='mailto:aandfwebdev@gmail.com' >
                         <img className='navbar__icon' src='./Assets/gmail__icon.png' alt='' />
                     </a>
                 </div>
@@ -100,7 +100,7 @@ function Contact() {
                 </form>
             </div>
         </div>
-    </>
+    </div>
     )
 }
 

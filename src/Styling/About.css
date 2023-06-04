@@ -7,9 +7,18 @@
     align-items: center;
 }
 
+.about__heroText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
 .about__hero__wrapper{
     margin-top: 25px;
-    background-color: #171616;
+    padding: 5% 0;
+    background-color: #0B0F12;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,7 +31,7 @@
     font-family: Exo 2;
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.1em;
     padding: 15px 0;
@@ -33,14 +42,14 @@
     font-family: Exo 2;
     font-style: normal;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.1em;
 }
 
 .dark-small__text{
     font-weight: 200;
-    font-size: 20px;
+    font-size: 12px;
     line-height: 24px;
     color: #222121;
 }
@@ -49,8 +58,7 @@
     font-family: Ovo;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 28px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: 0.1em;
     color: #222121;
@@ -58,7 +66,7 @@
 
 .extra-large{
     font-weight: 200;
-    font-size: 50px !important;
+    font-size: 30px !important;
     padding: 20px 0;
     line-height: 38px;
 }
@@ -87,6 +95,52 @@
     width: 100%;
     text-align: center;
 }
+
+.cta__widget{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    max-width: 1100px;
+    background-color: #1E1E1E;
+    color: #fff !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 25px;
+    margin: 5% 0;
+}
+
+.widget__title{
+    min-width: 175px;
+}
+
+/* CALL TO ACTION START */
+.cta__wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 5% 0;
+}
+
+.cta__title{
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: #222121; 
+}
+
+.cta__img{
+    padding: 0 50px;
+}
+
+.cta__text__wrapper{
+    max-width: 400px;
+}
+/* CALL TO ACTION END */
+
 
 .toolboxItem__wrapper{
     width: 100%;
@@ -121,21 +175,26 @@
     margin-bottom: -52%;
 }
 
+.card__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .contact__link__container{
     position: relative;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: whitesmoke;
-    background-image: url('../Images/contact__background.jpg');
+    background-image: url('../Images/contact__bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 80%;
-    height: 75vh;
+    width: 75%;
+    height: 500px;
     margin: 5% 0;
-    border-radius: 15px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .contact__link{
@@ -173,10 +232,13 @@
 
 @media only screen and (max-width: 768px){
     .extra-large{
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
     .about__hero__wrapper{
         flex-direction: column;
+    }
+    .about__heroText{
+        margin: 5%;
     }
     .hero__center__img{
         max-width: 350px;
@@ -185,6 +247,12 @@
         justify-content: space-evenly;
         width: 100%;
         display: flex;
+    }
+    .cta__widget{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10%;
     }
     .toolbox__container{
         overflow-x: hidden;
@@ -203,5 +271,32 @@
         100%{
             transform: translateX(-100%);
         }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .light-large__text{
+        inline-size: 75px;
+        text-align: center;
+    }
+    .light-small__text{
+        font-size: 10px;
+    }
+    .contact__link__container{
+        width: 85%;
+        height: 450px;
+        margin: 5% 0;
+    }
+    .cta__widget{
+        margin: 20% 0;
+    }
+    .widget__title{
+        text-align: left !important;
+    }
+    .cta__text__wrapper{
+        max-width: 300px;
+    }
+    .card__container{
+        flex-wrap: wrap;
     }
 }

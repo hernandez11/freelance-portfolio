@@ -1,4 +1,6 @@
 .footer{
+    margin-top: 100px;
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -7,13 +9,21 @@
 }
 
 .footer >p{
-    color: #000000;
+    color: #fff;
     font-family: Exo 2;
     font-style: normal;
     font-weight: 200;
     font-size: 10px;
     line-height: 12px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
+}
+
+.footer__bg{
+    z-index: -1;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 350px;
 }
 
 @media only screen and (max-width: 480px){
@@ -22,6 +32,10 @@
     }
     .footer >p{
         font-weight: 300;
+    }
+    .footer__bg{
+        width: 100%;
+        height: 500px;
     }
 }
 

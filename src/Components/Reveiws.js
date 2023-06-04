@@ -6,6 +6,7 @@ import Quotes from './Data.js';
 function Reveiws() {
     const [ current, setCurrent ] = useState(Quotes[0])
     const [ active, setActive ] = useState(0)
+    const [build, setBuild] = useState(true);
 
     const handleSetClicked = (event) => {
         setCurrent(Quotes[event.target.getAttribute('data-quote')])

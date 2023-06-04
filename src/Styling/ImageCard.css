@@ -1,0 +1,22 @@
+.card{
+    padding: 10% 25px;
+}
+
+.card__image{
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media only screen and (max-width: 480px){
+    .card{
+        padding: 2% 25px;
+    }
+    .card__image{
+        height: 300px;
+        border-radius: 10px;
+    }
+}

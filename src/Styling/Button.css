@@ -2,9 +2,9 @@ button,
 button::after {
     padding: 16px 20px;
     font-size: 18px;
-    background: linear-gradient(45deg, transparent 5%, #222 5%);
+    background: linear-gradient(45deg, transparent 5%, #fff 5%);
     border: 0;
-    color: #fff;
+    color: #000;
     letter-spacing: 3px;
     line-height: 1;
     box-shadow: 6px 0px 0px #436879;
@@ -27,7 +27,7 @@ button::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #436879 3%, #436879 5%, #222 5%);
+    background: linear-gradient(45deg, transparent 3%, #436879 3%, #436879 5%, #fff 5%);
     text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #436879;
     clip-path: var(--slice-0);
 }

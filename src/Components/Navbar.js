@@ -16,7 +16,7 @@ function Navbar() {
                 </Link>
             </div>
             <Link to='/' className='navbar__logo'>
-                <img src='./Assets/logo_black.png' alt='' />
+                <img className='primary__logo' src='./Assets/primaryLogo__black.png' alt='' />
             </Link>
             <div className='navbar__icons__container'>
                 <a href='https://www.linkedin.com/in/angelhdzdiaz/' target="_blank" rel="noopener noreferrer" >

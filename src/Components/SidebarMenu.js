@@ -15,18 +15,18 @@ function SidebarMenu() {
             <Link to='#' className='menu__bars'>
                 <MenuIcon style={{ fontSize: 30 }} onClick={showSidebar}/>
             </Link>
-            <img src='./Assets/logo_black.png' alt='' />
+            <img className='primary__logo' src='./Assets/primaryLogo__black.png' alt='' />
         </div>
         <div>
             <nav className={sidebar ? 'nav__menu active' : 'nav__menu'}>
                 <ul className='nav__menu__items' onClick={showSidebar}>
                     <li className='navbar__toggle'>
                         <Link to='#' className='menu__bars'>
-                            <CloseIcon style={{ fontSize: 30 }} />
+                            <CloseIcon style={{ fontSize: 30, color: "white" }} />
                         </Link>
                     </li>
                     <div className='sidebar__active__wrapper'>
-                        <img className='sidebar__active__logo' src='./Assets/logo_black.png' alt='' />
+                        <img className='primary__logo' src='./Assets/primaryLogo__white.png' alt='' />
                         <span>
                             {SidebarData.map((item, index) => {
                                 return (
@@ -36,7 +36,7 @@ function SidebarMenu() {
                                 );
                             })}
                         </span>
-                        <div className='home__right'>
+                        <div className='sidebar__home__right'>
                             <a href='https://www.linkedin.com/in/angelhdzdiaz/' target="_blank" rel="noopener noreferrer">
                                 <img className='right__icon' src='./Assets/linkedin__icon.png' alt='' />
                             </a>

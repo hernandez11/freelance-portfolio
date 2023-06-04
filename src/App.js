@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import Services from './Pages/Services';
 import LatestWork from './Pages/LatestWork';
 import Footer from './Components/Footer.js';
 
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path='/latest-work'>
               <LatestWork />
+            </Route>
+            <Route exact path='/Additional-services'>
+              <Services />
             </Route>
           </div>
           </Switch>
